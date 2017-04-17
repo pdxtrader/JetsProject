@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class JetDriver {
 	public static void main(String[] args) {
+		
+		
+		
 		Scanner kb = new Scanner(System.in);
 
 		System.out.println("==PLEASE SELECTION A MENU OPTION==");
@@ -17,23 +20,45 @@ public class JetDriver {
 		System.out.println("==========INPUT A NUMBER==========");
 		int menuSelection = kb.nextInt();
 		
-		
 		//switch that calls a method for each one;
 		
 
 	    switch (menuSelection) {
-	      case 1:
-	    	  
-	        break;
-	      case 2:
-	    ;
-	        break;
+	    		case 1:
+	    			if (menuSelection == 1) {
+	    				System.out.println("1 CALLED");
+	    			}
+	    			break;
+	    		case 2:
+	    			if (menuSelection == 2) {
+	    		  //call VIEW FASTEST JET
+	    				System.out.println("2 CALLED");
+	    			}
+	    			break;
+	    	case 3:
+	    			if (menuSelection == 3) {
+	    		  //call view jet with longest range
+	    				System.out.println("3 CALLED");
+	    			}
+	    			break;
+	    	case 4:
+	    			if (menuSelection == 4) {
+	    				System.out.println("4 CALLED");
+	    				//call ad a jet to fleet
+	    			}
+	    			break;
+	    	case 5:
+	    			if (menuSelection == 5) {
+	    				//call quit the program
+	    				System.out.println("5 CALLED");
+	    			}
+	    			break;
+	    			else {
+	    				System.out.println("That is not a valid menu entry");
+	    				System.out.println("Please enter a number 1 through 5 ");
+	    			}
 		
-		
-		
-		
-		
-		
+	    			}
 		
 		
 		
