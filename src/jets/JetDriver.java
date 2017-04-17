@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class JetDriver {
 	public static void main(String[] args) {
-		
-		
+		JetDriver.testObject();
+	}
+	
+	static void testObject() {
 		
 		Scanner kb = new Scanner(System.in);
 
@@ -21,7 +23,7 @@ public class JetDriver {
 		int menuSelection = kb.nextInt();
 		
 		//switch that calls a method for each one;
-		
+	
 
 	    switch (menuSelection) {
 	    		case 1:
@@ -53,14 +55,15 @@ public class JetDriver {
 	    				System.out.println("5 CALLED");
 	    			}
 	    			break;
-	    			else {
-	    				System.out.println("That is not a valid menu entry");
-	    				System.out.println("Please enter a number 1 through 5 ");
+	    	case 6:
+	    			if (menuSelection != 1 || menuSelection != 2 || menuSelection != 3 || menuSelection != 4 || menuSelection != 5  ) {
+						System.out.println("That is not a valid menu entry");
+						System.out.println("Please enter a number 1 through 5 ");
+						JetDriver.testObject();
+					break;
 	    			}
-		
-	    			}
-		
-		
+	    	}  			
+	}
 		
 		
 //		int menu[][][] =  //declaration and instantiation
@@ -72,12 +75,7 @@ public class JetDriver {
 		
 	
 		
-//		String hangar[]= new Sting hangar[100]; //declaration and instantiation
-//			hangar[0] = new Jet("Amazing Jet")
-////			hangar[1] = "Jet2";
-////			hangar[2] = "Jet3";
-////			hangar[3] = "Jet4";
-////			hangar[4] = "Jet5";
+
 		
 //		int jetNumbers[]= new int[args.length]; //declaration and instantiation
 //		
@@ -123,5 +121,6 @@ public class JetDriver {
 //		for ( i = 0; jets.equals(obj)
 			
 		
-	}
+	
 }
+
